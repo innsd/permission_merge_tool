@@ -1,0 +1,9 @@
+users:
+  459881e5-5284-35e6-b9af-7f9164e149a8:
+    lastname: Xiaodi_dada
+    group: Builder
+    subgroups: []
+    permissions:
+    - gadgetsmenu.hats.freddyfazbear
+    - gadgetsmenu.hats.whitewizard
+    - gadgetsmenu.suits.speedster.leggings

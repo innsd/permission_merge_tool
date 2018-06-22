@@ -1,0 +1,7 @@
+{
+    "backups":"1",
+    "interval":"10",
+    "path1":"/home/cheng/work-space/python/permission_merge_tool/temp_config/log.yml",
+    "path2":"/home/cheng/work-space/python/permission_merge_tool/temp_config/sc.yml",
+    "path3":"/home/cheng/work-space/python/permission_merge_tool/temp_config/game.yml"
+}
