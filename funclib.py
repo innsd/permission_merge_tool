@@ -5,6 +5,7 @@ import logging
 import Tlock
 import time
 import shutil
+import re
 def file_init():
     path1=input("请输入第一个服务器的权限文件路径：")
     path2=input("请输入第二个服务器的权限文件路径：")
@@ -57,6 +58,11 @@ def check_merge(config_data,permissions_is_merged):
     players_in_f3=set(permission3["users"].keys())
     players=players_in_f1|players_in_f2|players_in_f3
     for player in players:
+        if re.match(r'^\w{8}\-\w{4}\-\w{4}\-\w{4}\-\w{12}',player):
+            pass
+        else:
+            logging.warning("UUID错误："+player+",跳过该玩家！")
+            continue
         permissions_in_1=set()
         permissions_in_2=set()
         permissions_in_3=set()
