@@ -73,7 +73,10 @@ def check_merge(config_data,permissions_is_merged):
         for (servername,players_set_in_this_server) in players_in_every_server_set.items():
             if player in players_set_in_this_server:
                 isExist_in_servers[servername]=True
-                logging.info("此玩家存在于:"+servername+"游戏ID："+yaml_permissions_data[servername]["users"][player]['lastname'])
+                try:
+                    logging.info("此玩家存在于:"+servername+"游戏ID："+yaml_permissions_data[servername]["users"][player]['lastname'])
+                except:
+                    logging.info("此玩家存在于:"+servername+"游戏ID：null")
                 permissions_in_every_server[servername]=set(yaml_permissions_data[servername]["users"][player]["permissions"])
             else:
                 isExist_in_servers[servername]=False
