@@ -1,7 +1,10 @@
 {
-    "backups":"1",
-    "interval":"10",
-    "path1":"/home/cheng/work-space/python/permission_merge_tool/temp_config/log.yml",
-    "path2":"/home/cheng/work-space/python/permission_merge_tool/temp_config/sc.yml",
-    "path3":"/home/cheng/work-space/python/permission_merge_tool/temp_config/game.yml"
+    "backups": 1,
+    "interval": 1,
+    "uuid":"^\\w{8}\\-\\w{4}\\-\\w{4}\\-\\w{4}\\-\\w{12}",
+    "paths": {
+        "登录": "/home/cheng/work-space/python/permission_merge_tool/temp_config/log.yml",
+        "生存": "/home/cheng/work-space/python/permission_merge_tool/temp_config/sc.yml",
+        "小游戏": "/home/cheng/work-space/python/permission_merge_tool/temp_config/game.yml"
+    }
 }
